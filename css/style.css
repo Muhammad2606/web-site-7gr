@@ -54,7 +54,7 @@ img{
    display: block;
    font-weight: 900;
 }
-.navagation .navbar-nav a{
+.navagation .navbarnav a{
     word-spacing: 2rem;
     padding-left: 1rem;
     padding-right: 2rem;
@@ -68,7 +68,7 @@ img{
    font-weight: 100;
    letter-spacing: 0.1rem;
 }
-.navagation .navbar-nav a:hover{
+.navagation .navbarnav a:hover{
     opacity: 0.5;
 }
 .banner{
@@ -282,6 +282,7 @@ form .fa-search{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 3rem;
+    
 }
 .about-item{
     cursor: pointer;
@@ -300,6 +301,7 @@ form .fa-search{
 }.about-title p{
     margin-top: 1rem;
     text-align: left;
+   
 
 }
 /* about end  */
@@ -333,12 +335,61 @@ form .fa-search{
     font-size: 1.5rem;
 }
 
-.navbar-nav i{
-   
+
+.navbarnav i{
+    display: none;
+   color: #fff;
+}
+
+/* web site end  */
+/* start responsive */
+@media screen and (max-width:800px){
+
+.navagation .navbarnav a{
     display: none;
 }
-/* FOOTEREND  */
-/* @media only screen and (max-width: 768px)    {
-    .navbar-nav a{
-    color: black;
-    }} */
+.navagation .navbarnav i{
+    display: block;
+    margin-right: 2rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.banner .banner-title h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.banner .banner-title p{
+    font-size: 1rem;
+}
+
+.design-content{
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2rem;
+
+}
+.blog-content{
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+.blog-content button{
+    background-color: gray;
+    color: #fff;
+    border-radius:1rem;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: 100%;
+ 
+}
+.about-title p{
+    text-align: center;
+}
+.footer{
+    padding: 2.4rem 0;
+}
+
+
+}
